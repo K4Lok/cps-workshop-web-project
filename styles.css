@@ -2,9 +2,71 @@
 
 *, :root {
     font-family: 'Noto Sans TC', sans-serif;
+    --padding-wrapper: 70px;
 }
 
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+
 /* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #87A4B4;
+    padding-inline: var(--padding-wrapper);
+    height: 90px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo-container #logo {
+    width: 40px;
+    height: 35px;
+    object-fit: contain;
+}
+
+.logo-container #title {
+    margin: 0;
+    font-weight: normal;
+    color: white;
+}
+
+.logo-container #title:hover {
+    color: #EDEDED;
+}
+
+nav li,
+nav a {
+    color: white;
+    font-size: 20px;
+}
+
+nav a:hover {
+    color: #EDEDED;
+}
+
+
+/* Main Content */
+h2 {
+    font-size: 36px;
+    text-align: center;
+    margin-block: 4rem;
+}
 
 
 /* Events */
