@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap');
+
+*, :root {
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+/* Header */
+
+
+/* Events */
+.events-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.event {
+    width: 45%;
+    max-width: 30rem;
+    padding: 10px;
+    background-color: #F4F4F4;
+    border-radius: 10px;
+    /* cursor: pointer; */
+}
+
+.event:hover {
+    transform: scale(102%);
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 2/1;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.event img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.event .type {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: #7AC2B1;
+    padding-inline: 10px;
+    padding-block: 4px;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+}
+
+.event-info {
+    padding-inline: 10px;
+    margin-block: 10px;
+}
+
+.event .date,
+.event h3 {
+    margin: 0;
+}
+
+.event h3 {
+    font-weight: normal;
+}
+
+.event .date {
+    font-size: 14px;
+    color: #7AB3CC;
+}
