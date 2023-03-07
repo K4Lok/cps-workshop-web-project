@@ -84,7 +84,6 @@ main h2 {
 .events-container {
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
     gap: 2rem;
 }
@@ -95,7 +94,6 @@ main h2 {
     padding: 10px;
     background-color: #F4F4F4;
     border-radius: 10px;
-    /* cursor: pointer; */
 }
 
 .event:hover {
