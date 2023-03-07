@@ -14,6 +14,11 @@ a {
     text-decoration: none;
 }
 
+a:active,
+a:visited {
+    color: inherit;
+}
+
 ul {
     list-style: none;
 }
@@ -143,6 +148,11 @@ main h2 {
 /* Responsive For Mobile Device */
 @media (max-width: 640px) {
     header {
+        height: 70px;
+        padding-inline: var(--padding-wrapper-mobile);
+    }
+
+    main {
         padding-inline: var(--padding-wrapper-mobile);
     }
 
@@ -162,9 +172,5 @@ main h2 {
     .event {
         width: 100%;
         max-width: none;
-    }
-
-    main {
-        padding-inline: var(--padding-wrapper-mobile);
     }
 }
