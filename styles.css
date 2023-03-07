@@ -17,6 +17,10 @@ ul {
     list-style: none;
 }
 
+main {
+    padding-inline: var(--padding-wrapper);
+}
+
 
 /* Header */
 header {
@@ -30,7 +34,7 @@ header {
 
 .logo-container {
     display: flex;
-    align-items: center;
+    align-items: end;
     gap: 1rem;
 }
 
@@ -133,4 +137,12 @@ h2 {
 .event .date {
     font-size: 14px;
     color: #7AB3CC;
+}
+
+/* Responsive For Mobile Device */
+@media (max-width: 640px) {
+    .event {
+        width: 100%;
+        max-width: none;
+    }
 }
