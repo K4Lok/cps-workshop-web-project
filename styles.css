@@ -3,6 +3,7 @@
 *, :root {
     font-family: 'Noto Sans TC', sans-serif;
     --padding-wrapper: 70px;
+    --padding-wrapper-mobile: 20px;
 }
 
 body {
@@ -66,7 +67,7 @@ nav a:hover {
 
 
 /* Main Content */
-h2 {
+main h2 {
     font-size: 36px;
     text-align: center;
     margin-block: 4rem;
@@ -141,8 +142,29 @@ h2 {
 
 /* Responsive For Mobile Device */
 @media (max-width: 640px) {
+    header {
+        padding-inline: var(--padding-wrapper-mobile);
+    }
+
+    main h2 {
+        font-size: 26px;
+        margin-block: 2rem;
+    }
+
+    #title {
+        display: none;
+    }
+
+    .events-container {
+        gap: 1rem;
+    }
+
     .event {
         width: 100%;
         max-width: none;
+    }
+
+    main {
+        padding-inline: var(--padding-wrapper-mobile);
     }
 }
