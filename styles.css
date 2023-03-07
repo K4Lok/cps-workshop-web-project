@@ -174,4 +174,8 @@ main h2 {
         width: 100%;
         max-width: none;
     }
+
+    .image-container {
+        aspect-ratio: 1.8/1;
+    }
 }
