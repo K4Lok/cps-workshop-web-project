@@ -1,3 +1,9 @@
+const colorMap = {
+    '工作坊': '#7AC2B1',
+    '分享會': '#FFA430',
+    '比賽': '#E5A0A0'
+}
+
 const container = document.getElementById('events');
 
 let events = [];
@@ -21,7 +27,7 @@ function createEventCards(items) {
         events += ` <div class="event">
                         <a target="_blank" href=${url}>
                             <div class="image-container">
-                                <span class="type">${item.event_type}</span>
+                                <span class="type" style="background-color: ${colorMap[item.event_type]}">${item.event_type}</span>
                                 <img src="${item.image}" alt="Post for ${item.name}">
                             </div>
                             <div class="event-info">
