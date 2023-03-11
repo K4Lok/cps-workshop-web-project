@@ -23,6 +23,8 @@ function createEventCards(items) {
 
     items.forEach(function (item) {
         const url = `${CPS_URL}/${item.id}`;
+        const date = new Date(item.date);
+        const formattedDate = `${date.getFullYear()}年${date.getMonth()}月${date.getDay()}日`;
 
         events += ` <div class="event">
                         <a target="_blank" href=${url}>
@@ -31,7 +33,7 @@ function createEventCards(items) {
                                 <img src="${item.image}" alt="Post for ${item.name}">
                             </div>
                             <div class="event-info">
-                                <p class="date">${item.date}</p>
+                                <p class="date">${formattedDate}</p>
                                 <h3>${item.name}</h3>
                             </div>
                         </a>
